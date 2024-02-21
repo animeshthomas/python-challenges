@@ -1,8 +1,16 @@
 def find_max_substring(test_str, sub_str):
-    max_sub = ''
-    for n in range(len(test_str)//len(sub_str)+1):
-        if sub_str * n in test_str:
-            max_sub = sub_str * n
+    max_count = 0
+    max_sub = ""
+
+    words = test_str.split()
+    print(words)
+
+    for word in words:
+        count = word.count(sub_str)
+        if count >= max_count:
+            max_count = count
+            max_sub = sub_str * max_count
+
     return max_sub
 
 test_str = 'geeksgeeks are geeks for all geeksgeeksgeeks'
