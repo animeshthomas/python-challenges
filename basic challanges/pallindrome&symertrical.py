@@ -22,6 +22,6 @@ def isSymmetrical(s):
     else:
         print(f"{s} is not symmetrical")
         
-s = "bobo"
+s = "zozo"
 ispallindrome(s)
 isSymmetrical(s)
