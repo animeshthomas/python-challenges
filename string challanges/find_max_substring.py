@@ -1,7 +1,6 @@
 def find_max_substring(test_str, sub_str):
     max_count = 0
     max_sub = ""
-
     words = test_str.split()
     print(words)
 
