@@ -10,6 +10,5 @@ for i in arg_str:
     m_cnt=test_str.count(i)
     if m_cnt<cnt:
 	    cnt=m_cnt
-# printing result
 print("Possible substrings count: ",cnt)
 
