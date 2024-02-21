@@ -4,6 +4,7 @@ def maxOccurenceofASubstring(s, sub_list):
     for letters in sub_list:
         count=s.count(letters)
         if(count>=max_count):
+        
             max_count=count
             max_sub=letters
     return max_sub
